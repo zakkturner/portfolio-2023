@@ -20,6 +20,8 @@
 </template>
 
 <script>
+// https://vueframework.com/guide/introduction.html#getting-started
+
 import TheSideBar from "./com/TheSideBar.vue";
 import TheForm from "./com/TheForm.vue";
 import RecentProjects from "./com/RecentProjects.vue";

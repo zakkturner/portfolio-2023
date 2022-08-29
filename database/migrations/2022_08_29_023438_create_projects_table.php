@@ -22,6 +22,7 @@ class CreateProjectsTable extends Migration
             $table->string("project_url");
             $table->string("technologies");
             $table->string("image_url");
+            $table->boolean("is_active");
             $table->timestamps();
         });
     }
