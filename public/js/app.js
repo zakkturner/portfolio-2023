@@ -29291,7 +29291,11 @@ var staticRenderFns = [
         _c("div", { staticClass: "admin-input-group" }, [
           _c("input", {
             staticClass: "admin-input",
-            attrs: { type: "text", name: "link", placeholder: "Project Name:" },
+            attrs: {
+              type: "text",
+              name: "project_name",
+              placeholder: "Project Name:",
+            },
           }),
         ]),
         _vm._v(" "),

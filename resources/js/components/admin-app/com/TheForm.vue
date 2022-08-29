@@ -6,7 +6,7 @@
                 <input
                     class="admin-input"
                     type="text"
-                    name="link"
+                    name="project_name"
                     placeholder="Project Name:"
                 />
             </div>
