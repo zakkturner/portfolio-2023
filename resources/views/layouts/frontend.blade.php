@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -22,6 +23,8 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+
+    @yield('styles')
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
@@ -47,7 +50,7 @@
               @if (Route::has('login'))
 
                   @auth
-                  <li class="nav-item"> <a href="{{ url('/home') }}" class="nav-link">Home</a></li>
+                  <li class="nav-item"> <a href="{{ url('/admin') }}" class="nav-link">Admin</a></li>
                   @else
                   <li class="nav-item">   <a href="{{ route('login') }}" class="nav-link">Log in</a></li>
 
@@ -119,7 +122,7 @@
             <div class="col-md-12 text-center">
 
               <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+    {{-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> --}}
     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
             </div>
           </div>
